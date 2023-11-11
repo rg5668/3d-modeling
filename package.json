@@ -14,6 +14,7 @@
     "@types/react-dom": "^18.2.15",
     "@types/three": "^0.158.2",
     "react": "^18.2.0",
+    "react-dat-gui": "^4.1.1",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "three": "^0.158.0",
