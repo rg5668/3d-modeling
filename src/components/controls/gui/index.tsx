@@ -2,13 +2,13 @@ import { DatGuiControlProps } from "../../../types/canvas";
 import DatGui, { DatButton, DatFolder, DatNumber } from "react-dat-gui";
 import "./index.css";
 
-const DatGuiControl = ({
+export default function DatGuiControl({
   cameraCoordinate,
   handleUpdate,
   handlePosition,
   isFloorPlan,
   handleFloorPlan,
-}: DatGuiControlProps) => {
+}: DatGuiControlProps) {
   return (
     <>
       <DatGui data={cameraCoordinate} onUpdate={handleUpdate}>
@@ -126,6 +126,4 @@ const DatGuiControl = ({
       </DatGui>
     </>
   );
-};
-
-export default DatGuiControl;
+}

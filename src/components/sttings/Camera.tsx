@@ -1,7 +1,13 @@
 import { OrthographicCamera, PerspectiveCamera } from "@react-three/drei";
 import { CameraProps } from "../../types/canvas";
 
-const Camera = ({ position, fov, zoom, far, type }: CameraProps) => {
+export default function Camera({
+  position,
+  fov,
+  zoom,
+  far,
+  type,
+}: CameraProps) {
   return (
     <>
       {type === "perspective" ? (
@@ -22,6 +28,4 @@ const Camera = ({ position, fov, zoom, far, type }: CameraProps) => {
       )}
     </>
   );
-};
-
-export default Camera;
+}

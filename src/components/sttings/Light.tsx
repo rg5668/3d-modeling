@@ -1,6 +1,6 @@
 import { LightProps } from "../../types/canvas";
 
-const Light = ({ position, type, intensity = 0.5 }: LightProps) => {
+export default function Light({ position, type, intensity = 0.5 }: LightProps) {
   return (
     <>
       {type === "ambient" ? (
@@ -10,6 +10,4 @@ const Light = ({ position, type, intensity = 0.5 }: LightProps) => {
       )}
     </>
   );
-};
-
-export default Light;
+}
