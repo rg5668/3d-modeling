@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
+
+sitemap: https://3d-modeling-rg5668.vercel.app/sitemap.xml
